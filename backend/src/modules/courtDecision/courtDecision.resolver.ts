@@ -1,6 +1,6 @@
 import { Resolver, Query } from "@nestjs/graphql";
-import { CourtDecision } from "./models/court-decision.model";
-import { CourtDecisionService } from "./court-decision.service";
+import { CourtDecision } from "./models/courtDecision.model";
+import { CourtDecisionService } from "./courtDecision.service";
 
 @Resolver(() => CourtDecision)
 export class CourtDecisionResolver {

@@ -1,6 +1,6 @@
 
 import { Injectable } from '@nestjs/common';
-import { CourtDecision } from './models/court-decision.model';
+import { CourtDecision } from './models/courtDecision.model';
 
 @Injectable()
 export class CourtDecisionService {

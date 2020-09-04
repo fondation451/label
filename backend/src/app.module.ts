@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CourtDecisionResolver } from './modules/court-decision/court-decision.resolver';
-import { CourtDecisionModule } from './modules/court-decision/court-decision.module';
+import { CourtDecisionModule } from './modules/courtDecision/courtDecision.module';
 
 @Module({
   imports: [
