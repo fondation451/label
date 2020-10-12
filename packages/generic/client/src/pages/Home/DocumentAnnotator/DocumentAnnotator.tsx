@@ -47,7 +47,7 @@ function DocumentAnnotator(): ReactElement {
     return (
       <LayoutGrid container>
         <LayoutGrid container item xs={4}>
-          <AnnotationsPanel annotations={annotations} anonymizer={anonymizer} />
+          <AnnotationsPanel annotations={annotations} anonymizer={anonymizer} settings={settings} />
         </LayoutGrid>
         <LayoutGrid container item xs={8}>
           <DocumentPanel
