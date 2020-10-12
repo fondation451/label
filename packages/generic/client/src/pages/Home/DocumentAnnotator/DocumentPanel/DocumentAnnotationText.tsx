@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Theme, useTheme } from '@material-ui/core';
 import { annotationType, settingsType } from '@label/core';
-import { getAnnotationColor } from '../../../../styles';
+import { getAnnotationCategoryColor } from '../../../../styles';
 
 export { DocumentAnnotationText };
 
@@ -19,7 +19,7 @@ function DocumentAnnotationText(props: {
     return {
       annotationText: {
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: getAnnotationColor(props.annotation, props.settings),
+        backgroundColor: getAnnotationCategoryColor(props.annotation.category, props.settings),
       },
     };
   }

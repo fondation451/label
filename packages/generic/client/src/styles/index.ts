@@ -1,6 +1,6 @@
-import { getAnnotationColor } from './getAnnotationColor';
+import { getAnnotationCategoryColor } from './getAnnotationCategoryColor';
 import { heights } from './heights';
 import { theme } from './theme';
 import { ThemeProvider } from './ThemeProvider';
 
-export { getAnnotationColor, heights, theme, ThemeProvider };
+export { getAnnotationCategoryColor, heights, theme, ThemeProvider };
