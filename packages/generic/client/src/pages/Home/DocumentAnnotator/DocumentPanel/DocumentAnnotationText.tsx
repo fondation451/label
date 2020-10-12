@@ -12,7 +12,6 @@ function DocumentAnnotationText(props: {
 }): ReactElement {
   const theme = useTheme();
   const style = buildStyle(theme);
-  console.log('style', style);
 
   return <span style={style.annotationText}>&nbsp;{props.annotationDisplayedText}&nbsp;</span>;
 
