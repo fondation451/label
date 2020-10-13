@@ -1,9 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useQuery, ApolloError } from '@apollo/client';
 import { buildAnonymizer, settingsModule } from '@label/core';
-import { LayoutGrid } from '../../../components';
-import { AnnotationsPanel } from './AnnotationsPanel';
-import { DocumentPanel } from './DocumentPanel';
 import {
   ANNOTATIONS_GRAPHQL_QUERY,
   annotationsGraphQLType,
@@ -12,6 +9,7 @@ import {
   DOCUMENTS_GRAPHQL_QUERY,
   documentGraphQLType,
 } from './graphql';
+import { DocumentAnnotationHandler } from './DocumentAnnotationHandler';
 
 export { DocumentAnnotator };
 
@@ -45,19 +43,12 @@ function DocumentAnnotator(): ReactElement {
     const anonymizer = buildAnonymizer(settings);
 
     return (
-      <LayoutGrid container>
-        <LayoutGrid container item xs={4}>
-          <AnnotationsPanel annotations={annotations} anonymizer={anonymizer} settings={settings} />
-        </LayoutGrid>
-        <LayoutGrid container item xs={8}>
-          <DocumentPanel
-            annotations={annotations}
-            anonymizer={anonymizer}
-            document={documents[0]}
-            settings={settings}
-          />
-        </LayoutGrid>
-      </LayoutGrid>
+      <DocumentAnnotationHandler
+        annotations={annotations}
+        anonymizer={anonymizer}
+        settings={settings}
+        document={documents[0]}
+      />
     );
   }
 
