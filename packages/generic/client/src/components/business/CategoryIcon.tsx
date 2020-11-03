@@ -1,5 +1,4 @@
 import React from 'react';
-import { Theme, useTheme } from '@material-ui/core';
 import { settingsModule } from '@label/core';
 import { annotatorStateHandlerType } from '../../services/annotatorState';
 import { Icon } from '../generic';
@@ -7,8 +6,7 @@ import { Icon } from '../generic';
 export { CategoryIcon };
 
 function CategoryIcon(props: { annotatorStateHandler: annotatorStateHandlerType; category: string; iconSize: number }) {
-  const theme = useTheme();
-  const styles = buildStyles(theme);
+  const styles = buildStyles();
 
   return (
     <div style={styles.categoryIcon}>
@@ -22,7 +20,7 @@ function CategoryIcon(props: { annotatorStateHandler: annotatorStateHandlerType;
     </div>
   );
 
-  function buildStyles(theme: Theme) {
+  function buildStyles() {
     return {
       categoryIcon: {
         width: props.iconSize,
