@@ -1,4 +1,4 @@
-import { CategoryIcon } from './business';
+import { CategoryIcon, Logo } from './business';
 import {
   Accordion,
   Button,
@@ -24,6 +24,7 @@ export {
   Header,
   Icon,
   LayoutGrid,
+  Logo,
   MenuBar,
   SwitchButton,
   Text,

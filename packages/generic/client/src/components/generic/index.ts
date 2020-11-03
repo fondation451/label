@@ -1,17 +1,18 @@
 import { Header } from './custom';
 import {
+  Accordion,
   Button,
-  SwitchButton,
   Checkbox,
   Dropdown,
+  Icon,
   LayoutGrid,
   MenuBar,
-  Accordion,
+  SvgImage,
+  SwitchButton,
   Text,
   TextInput,
   TextInputLarge,
   TooltipMenu,
-  Icon,
 } from './materialUI';
 
 export {
@@ -23,6 +24,7 @@ export {
   Icon,
   LayoutGrid,
   MenuBar,
+  SvgImage,
   SwitchButton,
   Text,
   TextInput,
