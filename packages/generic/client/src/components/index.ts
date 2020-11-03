@@ -1,4 +1,4 @@
-import { Header } from './custom';
+import { Header } from './generic/custom';
 import {
   Button,
   SwitchButton,
@@ -12,7 +12,7 @@ import {
   TextInputLarge,
   TooltipMenu,
   Icon,
-} from './materialUI';
+} from './generic/materialUI';
 
 export {
   Header,
